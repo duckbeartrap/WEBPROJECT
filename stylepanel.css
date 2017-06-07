@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+body{
+  margin: 0;
+  padding: 0;
+  background: #29323c;
+  font-family: "Cabin";
+  color: white;
+}
+*{
+  box-sizing: border-box;
+  font-family: "Droid+Sans Mono";
+}
+header{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.naming{
+  height: 100px;
+  width:200px;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+main{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.logo{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(./images/logo.png);
+  background-size: cover;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.start{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  float: left;
+  width: calc(100% - 500px);
+  height: 50px;
+  z-index: 5;
+}
+.upload{
+  display: block;
+  text-decoration: none;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  z-index: 5;
+  font-size: 30px;
+}
+.upload i{
+  line-height: 50px;
+}
+.upload:hover{
+  color: cyan;
+}
+.head{
+  width: 100%;
+  height: 50px;
+}
+.head span{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  float:left;
+  color: #ff599d;
+}
+
+.logout{
+  display: block;
+  text-decoration: none;
+  color: white;
+  float: right;
+  height: 50px;
+  width: 100px;
+  background: #8b1919;
+  line-height: 50px;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+}
+footer{
+	position: absolute;
+	max-width: 1200;
+	margin: 0 auto;
+	height: 50px;
+	top: 1000px;
+  right: 0;
+  bottom: 0;
+	left: 0;
+	border-top: 1px solid grey;
+	text-align: center;
+}
+.footermenu{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	margin-right: 25px;
+}
+
+.footermenu:hover{
+	color: #00adef;
+}
+.facebooklogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+}
+.googlelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.twitterlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.youtubelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.instagramlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.linkedinlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.vinelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.bgimage{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./Images/loginbg.jpg");
+  z-index: 0;
+  filter: blur(5px);
+  background-size: cover;
+}
+i{
+  color: white;
+}
+i:hover{
+	color: #00adef;
+}
+.firstline{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+form{
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+input{
+  width: 100%;
+  height: 50px;
+  float: left;
+  outline: none;
+  border: white solid 2px;
+  background: black;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+input:focus{
+  background: #007dff;
+  border-color: #007dff;
+}
+input:hover{
+  border-color: #007dff;
+}
+.button:hover{
+  background: #007dff;
+  cursor: pointer;
+}
+.error{
+display: block;
+width: 300px;
+height: 50px;
+color: #007dff;
+text-align: center;
+line-height: 50px;
+
+margin: auto;
+font-size: 30px;
+}

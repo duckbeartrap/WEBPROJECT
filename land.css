@@ -1,0 +1,61 @@
+body{
+  width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: #29323c;
+}
+*{
+  box-sizing: border-box;
+}
+.block{
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  font-size: 50px;
+  line-height: 100vh;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+  z-index: 0;
+  border: 5px solid white ;
+}
+.block span{
+z-index: 2;
+}
+.visit{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("landingpage/visit.jpg");
+  transition: 0.5s;
+  background-size: 500px;
+  background-position: center;
+  text-align: center;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+.shop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("landingpage/shop.jpg");
+  transition: 0.5s;
+  background-size: 500px;
+  background-position: center;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+.block:hover .visit{
+  background-size: 2500px;
+  filter: blur(20px);
+  opacity: 0.4;
+}
+.block:hover .shop{
+  background-size: 2500px;
+  filter: blur(20px);
+  opacity: 0.4;
+}

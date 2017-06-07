@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+body{
+  margin: 0;
+  padding: 0;
+  background: #29323c;
+  font-family: "Cabin";
+  color: white;
+}
+*{
+  box-sizing: border-box;
+  font-family: "Droid+Sans Mono";
+}
+header{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.bgimage{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./Images/loginbg.jpg");
+  z-index: 0;
+  filter: blur(5px);
+  background-size: cover;
+}
+main{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.logo{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(./images/logo.png);
+  background-size: cover;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.start{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  float: left;
+  width: calc(100% - 500px);
+  height: 50px;
+  z-index: 5;
+}
+.upload{
+  display: block;
+  text-decoration: none;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  z-index: 5;
+  font-size: 30px;
+}
+.upload i{
+  line-height: 50px;
+}
+.upload:hover{
+  color: #00adef;
+}
+.head{
+  width: 100%;
+  height: 50px;
+}
+.head span{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  float:left;
+  color: #ff599d;
+}
+.uploadform{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  opacity: 0.8;
+  z-index: 5;
+}
+.messy{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  opacity: 0.8;
+  z-index: 5;
+}
+.hidden{
+  display: none;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  float: left;
+  outline: none;
+  background: 0;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+input:hover{
+  background: green;
+  cursor: pointer;
+}
+
+.loginfo{
+  float: right;
+  height: 100%;
+  width: 450px;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: white;
+  opacity: 0.8;
+}
+.profpic{
+  float: left;
+  width: 46px;
+  height: 46px;
+  margin: 2px;
+  border-radius: 100%;
+  background-size: cover;
+  border: 1px solid gray;
+}
+.user{
+  float: left;
+  width: 250px;
+  line-height: 50px;
+  color: black;
+  text-align: left;
+  margin-left: 10px;
+
+}
+.logout{
+
+  display: block;
+  text-decoration: none;
+  color: white;
+  float: right;
+  height: 50px;
+  width: 100px;
+  background: #8b1919;
+  line-height: 50px;
+}
+.logout:hover{
+  background: #b51d1d;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+}
+.grid{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  margin-top: 10px;
+}
+.item{
+  float: left;
+  width: 20%;
+  height: 15vw;
+  border: 1px solid white;
+  background:black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image{
+  width: 100%;
+  height: 70%;
+  float: left;
+  background-position:center;
+  z-index: 0;
+}
+.filename{
+  display: block;
+  float: left;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  line-height: calc(0.3*20vw);
+}
+.item:hover{
+  cursor: pointer;
+  background-color: #222222;
+}
+.edit{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+.editor{
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: white;
+  opacity: 0.7
+}
+.area{
+  width: 100%;
+  height: calc(100vh - 200px);
+  margin:auto;
+  padding: 0;
+  outline: 0;
+  border: 2px solid black;
+  font-size: 15px;
+  float: left;
+}
+.mess{
+  width: 500px;
+  height: auto;
+  margin:0 auto;
+  list-style: none;
+  padding:0;
+  color: black;
+}
+.mess li{
+  border: 2px black solid;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+
+}
+.containphotos{
+  position: relative;
+  width: 1084px;
+  height: 467px;
+  margin: auto;
+  background: red;
+}
+.car{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.rims{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.options{
+  width: 1084px;
+  height: 100px;
+  margin: auto;
+}
+.optionsul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.optionsul li{
+  display: block;
+  text-align: center;
+  line-height: 100px;
+  width: 25%;
+  height: 100%;
+  float: left;
+  border:2px solid white;
+  font-size: 20px;
+}
+.optionsul li:hover{
+  cursor: pointer;
+  background: #00adef;
+}
+.cartcontain{
+  position: relative;
+  display: none;
+  width: 300px;
+  height: 300px;
+  overflow-y: scroll;
+  background: white;
+  z-index: 5;
+  opacity: 0.9;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.upload:hover .cartcontain{
+  display: block;
+}
+.numofcart{
+  width: 5px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+}
+.cartitems{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style:none;
+  background: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.cartitems li{
+  width: 100%;
+  height: 50px;
+  border: 2px white solid;
+  font-size: 10px;
+  color: white;
+  background: black;
+}
+.cartitems li:hover{
+  background: black;
+  color: white;
+}
+.cartitems li div{
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+.cartitems li span{
+  float: left;
+  margin-left: 5px;
+}
+.cartitems li a{
+  float: right;
+  width: 50px;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.buy{
+  background: rgb(0, 120, 30);
+}
+.buy:hover{
+  background: rgb(6, 179, 49);
+}
+.remove{
+  background: rgb(145, 0, 0);
+}
+.remove:hover{
+  background: rgb(219, 9, 9);
+}
+.cartitems li a:hover{
+  color: white;
+}
+#price{
+  width: 100%;
+  height: 50px;
+  margin:auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+.balance{
+  float: right;
+}
+.boughtitems{
+  display: block;
+  height: 100%;
+  width: 150px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+}
+.boughtitems:hover{
+  color: #00adef;
+}
+
+footer{
+	position: absolute;
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 50px;
+	top: 1000px;
+  right: 0;
+  bottom: 0;
+	left: 0;
+	border-top: 1px solid grey;
+	text-align: center;
+}
+.footermenu{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	margin-right: 25px;
+}
+
+.footermenu:hover{
+	color: #00adef;
+}
+.facebooklogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+}
+.googlelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.twitterlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.youtubelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.instagramlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.linkedinlogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+.vinelogo{
+	float: left;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 25px;
+}
+i{
+  color: white;
+}
+i:hover{
+	color: #00adef;
+}
+.firstline{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
